@@ -10,6 +10,11 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Todo
 {
+    function __toString()
+    {
+        return $this->getName() ? : 'New';
+    }
+
     /**
      * @MongoDB\Id(strategy="AUTO")
      */

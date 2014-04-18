@@ -1,0 +1,11 @@
+services:
+    dreamhood_main.admin.todo:
+          class: Dreamhood\MainBundle\Admin\TodoAdmin
+          arguments:
+              - ''
+              - Dreamhood\MainBundle\Document\Todo
+              - 'SonataAdminBundle:CRUD'
+          tags:
+              - { name: sonata.admin, manager_type: doctrine_mongodb, group: 'Miscellaneous', label: 'Todos' }
+          calls:
+              - [setRouteBuilder, ['@sonata.admin.route.path_info_slashes']]

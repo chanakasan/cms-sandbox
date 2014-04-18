@@ -37,6 +37,7 @@ class AppKernel extends Kernel
             new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\DoctrinePHPCRAdminBundle\SonataDoctrinePHPCRAdminBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Sonata\DoctrineMongoDBAdminBundle\SonataDoctrineMongoDBAdminBundle(),
 
             /** Dreamhood bundles */
             new Dreamhood\MainBundle\DreamhoodMainBundle(),

@@ -3,6 +3,6 @@ services:
     cms.phpcr.initializer:
         class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
         arguments:
-            - ["/cms/content/pages"]
+            - ["/cms/content/pages", "/cms/routes"]
         tags:
             - { name: doctrine_phpcr.initializer }

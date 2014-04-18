@@ -1,3 +1,6 @@
+imports:
+    - { resource: cmf_routing_auto.yml }
+
 # CMF Routing
 cmf_routing:
     chain:

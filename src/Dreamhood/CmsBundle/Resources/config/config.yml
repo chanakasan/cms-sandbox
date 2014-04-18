@@ -1,5 +1,6 @@
 imports:
-    - { resource: cmf_routing_auto.yml }
+    - { resource: cmf_routing_auto_config.yml }
+    - { resource: sonata_config.yml }
 
 # CMF Routing
 cmf_routing:
@@ -15,3 +16,15 @@ cmf_routing:
                 use_sonata_admin: false
         controllers_by_class:
                     Dreamhood\CmsBundle\Document\Page: Dreamhood\CmsBundle\Controller\PageController::pageAction
+
+
+# Sonata
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        sonata_admin_doctrine_phpcr.tree_block:
+            settings:
+                id: '/cms'
+            contexts:   [admin]

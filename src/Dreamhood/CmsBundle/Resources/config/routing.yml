@@ -1,3 +1,21 @@
+# Sonata
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+
+sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+cmf_tree:
+    resource: .
+    type: 'cmf_tree'
+
+# Regular
 dreamhood_cms_homepage:
     pattern:  /cms/hello/{name}
     defaults: { _controller: DreamhoodCmsBundle:Default:index }

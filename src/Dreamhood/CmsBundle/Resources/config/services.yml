@@ -1,6 +1,6 @@
 services:
 
-    cms.phpcr.initializer:
+    dreamhood_cms.phpcr.initializer:
         class: Doctrine\Bundle\PHPCRBundle\Initializer\GenericInitializer
         arguments:
             - ["/cms/content/pages", "/cms/routes"]

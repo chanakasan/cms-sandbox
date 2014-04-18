@@ -1,0 +1,14 @@
+# CMF Routing
+cmf_routing:
+    chain:
+        routers_by_id:
+            cmf_routing.dynamic_router: 20
+            router.default: 100
+    dynamic:
+        enabled: true
+        persistence:
+            phpcr:
+                route_basepath: /cms/routes
+                use_sonata_admin: false
+        controllers_by_class:
+                    Dreamhood\CmsBundle\Document\Page: Dreamhood\CmsBundle\Controller\PageController::pageAction

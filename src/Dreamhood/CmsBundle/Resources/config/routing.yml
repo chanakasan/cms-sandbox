@@ -1,0 +1,3 @@
+dreamhood_cms_homepage:
+    pattern:  /cms/hello/{name}
+    defaults: { _controller: DreamhoodCmsBundle:Default:index }

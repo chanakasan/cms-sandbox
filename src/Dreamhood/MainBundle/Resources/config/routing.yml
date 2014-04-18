@@ -1,3 +1,3 @@
 dreamhood_main_homepage:
-    pattern:  /hello/{name}
+    pattern:  /main/hello/{name}
     defaults: { _controller: DreamhoodMainBundle:Default:index }

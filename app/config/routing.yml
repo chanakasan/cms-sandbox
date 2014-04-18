@@ -1,3 +1,7 @@
+dreamhood_cms:
+    resource: "@DreamhoodCmsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 dreamhood_main:
     resource: "@DreamhoodMainBundle/Resources/config/routing.yml"
     prefix:   /

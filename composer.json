@@ -17,19 +17,27 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~2.3",
         "sensio/framework-extra-bundle": "~3.0",
-        "sensio/generator-bundle": "~2.3",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "sensio/generator-bundle": "~2.3"
+    },
+    "require-dev": {
+        "liip/functional-test-bundle": "1.0.*",
+        "phpspec/phpspec": "2.0.*",
+        "behat/behat":                       "2.5.*@stable",
+        "behat/symfony2-extension":          "*",
+        "behat/mink-extension":              "*",
+        "behat/mink-browserkit-driver":      "*",
+        "behat/mink-goutte-driver":          "*",
+        "behat/mink-selenium2-driver":       "*",
+        "fzaninotto/faker":                  "1.2.*"
     },
     "scripts": {
         "post-install-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-update-cmd": [
-            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",

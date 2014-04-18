@@ -1,0 +1,12 @@
+guard :shell do
+  watch(%r{^spec/.+Spec.php}) { |m|
+    system("clear")
+    system("bin/phpspec run --no-interaction --format=pretty #{m[0]}")
+  }
+
+  watch(%r{^src/(.+).php}) {
+    system("clear")
+    system("bin/phpspec run --no-interaction --format=pretty")
+    system("phpunit -c app/phpunit.xml.dist")
+  }
+end

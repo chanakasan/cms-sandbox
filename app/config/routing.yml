@@ -1,0 +1,4 @@
+dreamhood_main:
+    resource: "@DreamhoodMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

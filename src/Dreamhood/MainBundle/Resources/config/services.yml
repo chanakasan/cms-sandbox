@@ -1,0 +1,7 @@
+parameters:
+#    dreamhood_main.example.class: Dreamhood\MainBundle\Example
+
+services:
+#    dreamhood_main.example:
+#        class: %dreamhood_main.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

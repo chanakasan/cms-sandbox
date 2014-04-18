@@ -9,6 +9,11 @@ use Doctrine\ODM\PHPCR\Mapping\Annotations as PHPCR;
  */
 class Page
 {
+    function __toString()
+    {
+        return $this->getTitle() ? : 'New Page';
+    }
+
     /**
      * @PHPCR\Id
      */

@@ -2,6 +2,8 @@
 
 namespace Dreamhood\CmsBundle\Repository;
 
-class PageRepository
+use Doctrine\ODM\PHPCR\DocumentRepository;
+
+class PageRepository extends DocumentRepository
 {
 }

@@ -7,6 +7,6 @@ guard :shell do
   watch(%r{^src/(.+).php}) {
     system("clear")
     system("bin/phpspec run --no-interaction --format=pretty")
-    system("phpunit -c app/phpunit.xml.dist")
+    system("bin/phpunit -c app/phpunit.xml.dist")
   }
 end

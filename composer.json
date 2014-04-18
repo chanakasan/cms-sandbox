@@ -41,7 +41,8 @@
         "behat/mink-browserkit-driver":      "*",
         "behat/mink-goutte-driver":          "*",
         "behat/mink-selenium2-driver":       "*",
-        "fzaninotto/faker":                  "1.3.*"
+        "fzaninotto/faker":                  "1.3.*",
+        "phpunit/phpunit": "3.7.*"
     },
     "scripts": {
         "post-install-cmd": [
